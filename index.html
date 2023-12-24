@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio Website</title>
+
+ <!-- bootstrap link  -->
+ <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script></script> -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+
+<!-- bootstrap icon link  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<!-- script link  -->
+<script src="script.js" defer></script>
+
+<!-- css link  -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+            <h1 class="logo"><span>P</span>ortFolio</h1>
+             
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">PortFolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="bi bi-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="bi bi-list" onclick="openmenu()"></i>
+            </nav>
+           <div class="header-text">
+            <p>Front End Developer</p>
+            <h1>Hi, I'm <span>Gajanan</span> <br> Ghongade From ...</h1>
+           </div>
+        </div>
+    </div>
+
+    <!-- -------- about -------  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, My name is <span>Gajanan Ghongade.</span> I have completed Bachelor Of Engineering from Savitribai Phule Pune University in 2021. then I joined front end development course currently i am a fresher and looking for a job. I have done so many Front End Development Projects related to my Profile like E-commerce Website, Food Delivery Website & Entertainment Website.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills" >
+                        <ul>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>Javascript</span></li>
+                            <li><span>Bootstrap</span></li>
+                            <li><span>ReactJs</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresher</span></li>
+                          
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>Bachelor of Engineering From SPPU</li>
+                            <li><span>2018</span><br>Diploma From GPH</li>
+     
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+<!-- ----------------services------------ -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="bi bi-code-slash"></i>
+                <h2>Web Development</h2>
+                <p> Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <i class="bi bi-braces"></i>
+                <h2>Software Development</h2>
+                <p> Software development services help plan, design, develop, integrate, test, manage and evolve software solutions. Quality-centered and adherent to mature software development practices, ScienceSoft provides application development services to startups, software companies, and enterprises across 30+ industries.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/website-development.avif" alt="">
+                <div class="layer">
+                    <h3>Creating Websites</h3>
+                    <p>A website is a collection of files accessed through a web address, covering a particular theme or subject, and managed by a particular person or organization. Its opening page is called a home page.</p>
+                    <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                   
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/software_dev.jpg" alt="">
+                <div class="layer">
+                    <h3>Software Development</h3>
+                    <p>Software development tailored to a specific group of end users, workflows, or institutions is called “custom software development.” For example, contrary to COTS, B2B eCommerce Software Solutions targets specific needs. On the other hand, common Off-The-Shelf (COTS) software is designed to meet a wide range of needs and therefore is ready for mass production, resale, and distribution</p>
+                    <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                    
+                </div>
+                </div>
+               
+            <div class="work">
+                <img src="images/webdev2.webp" alt="">
+                <div class="layer">
+                <h3>Web App Development</h3>
+                <p>Web applications also known as web apps are interactive software that is built to run on a browser. Unlike a regular application installed locally on a mobile or desktop device, a web app is stored on a remote server, and users can access it on the internet using the web browser of any device.</p>
+                <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+            </div>
+        </div>
+        <a href="#" class="btn"  >See more</a>
+    </div>
+
+</div>
+
+<!-- ------------------contact------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="bi bi-envelope-fill"></i>gajananghongade15@gmail.com</p>
+                <p><i class="bi bi-telephone-fill"></i>+917218182394</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://whatsapp.com/" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+                        <a href="https://linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    <a href="images/MyResume.pdf" class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form action="#" name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="your name" required>
+                    <input type="email" name="Email" placeholder="your email id" required>
+                    <textarea name="Message" id=""  cols="6" placeholder="your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+                <span id="msg"></span>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy Portfolio @ Gajanan. All rights reserved. </p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+    <script>
+let tablinks = document.getElementsByClassName('tab-links');
+// console.log(tablinks)
+let tabcontents = document.getElementsByClassName('tab-contents')
+
+function opentab(tabname){
+    for(let tablink of tablinks){
+        tablink.classList.remove("active-link")
+    }
+
+    for(let tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab")
+    }
+    event.currentTarget.classList.add("active-link")
+    document.getElementById(tabname).classList.add("active-tab")
+}
+    </script>
+
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzuL5HHsfozZU99AOUX4nm_qHQg5CenHiu5ujOuVgU5yF4oObBJRJlOP6OsMk9ae1w5/exec'
+    const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = "";
+            }, 5000)
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+
+
+
+
+
+</body>
+</html>
